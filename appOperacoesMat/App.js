@@ -77,24 +77,8 @@ export default class operacoesmatematicas extends React.Component {
     );
   };
 
-  multiplicar = (valor1, valor2, resultado) => {
-    (resultado = parseFloat(valor1) * parseFloat(valor2)),
-      Speech.speak(
-        "Valor 1 digitado: " +
-          valor1 +
-          "\n Valor 2 Digitado: " +
-          valor2 +
-          "\n Resultado: " +
-          resultado
-      );
-    alert(
-      "Valor 1 digitado: " +
-        valor1 +
-        "\n Valor 2 Digitado: " +
-        valor2 +
-        "\n Resultado: " +
-        resultado
-    );
+  pontoum= () => {
+  Speech.speak("teste",{ language: "pt-BR" });
   };
 
   render() {
@@ -162,11 +146,7 @@ export default class operacoesmatematicas extends React.Component {
         <TouchableOpacity
           style={MeuEstilo.submitButton4}
           onPress={() =>
-            this.multiplicar(
-              this.state.valor1,
-              this.state.valor2,
-              this.state.resultado
-            )
+            this.pontoum()
           }
         >
           <Text style={MeuEstilo.submitButtonText}>Multiplicar</Text>

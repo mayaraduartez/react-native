@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "appList0",
-    "slug": "appList0",
+    "name": "TemplateDrawer",
+    "slug": "TemplateDrawer",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
