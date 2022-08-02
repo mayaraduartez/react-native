@@ -77,8 +77,24 @@ export default class operacoesmatematicas extends React.Component {
     );
   };
 
-  pontoum= () => {
-  Speech.speak("teste",{ language: "pt-BR" });
+  multiplicar= (valor1, valor2, resultado) => {
+    (resultado = parseFloat(valor1) * parseFloat(valor2)),
+    Speech.speak(
+      "Valor 1 digitado: " +
+        valor1 +
+        "\n Valor 2 Digitado: " +
+        valor2 +
+        "\n Resultado: " +
+        resultado
+    );
+  alert(
+    "Valor 1 digitado: " +
+      valor1 +
+      "\n Valor 2 Digitado: " +
+      valor2 +
+      "\n Resultado: " +
+      resultado
+  );
   };
 
   render() {
@@ -118,7 +134,7 @@ export default class operacoesmatematicas extends React.Component {
         </TouchableOpacity>
 
         <TouchableOpacity //subtrair
-          style={MeuEstilo.submitButton2}
+          style={MeuEstilo.submitButton}
           onPress={() =>
             this.subtrair(
               this.state.valor1,
@@ -131,7 +147,7 @@ export default class operacoesmatematicas extends React.Component {
         </TouchableOpacity>
 
         <TouchableOpacity
-          style={MeuEstilo.submitButton3}
+          style={MeuEstilo.submitButton}
           onPress={() =>
             this.dividir(
               this.state.valor1,
@@ -144,9 +160,13 @@ export default class operacoesmatematicas extends React.Component {
         </TouchableOpacity>
 
         <TouchableOpacity
-          style={MeuEstilo.submitButton4}
+          style={MeuEstilo.submitButton}
           onPress={() =>
-            this.pontoum()
+            this.multiplicar(
+              this.state.valor1,
+              this.state.valor2,
+              this.state.resultado
+              )
           }
         >
           <Text style={MeuEstilo.submitButtonText}>Multiplicar</Text>
