@@ -5,6 +5,8 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
 import Flatlist from './flatlist/Flatlist'
 import Mapa from './mapa/Mapa'
+import Mapa2 from './mapa/Mapa2'
+
 
 function HomeScreen({ navigation }) {
   return (
@@ -30,15 +32,21 @@ function MapaScreen({ navigation }) {
   );
 }
 
+function Mapa2Screen({ navigation }) {
+  return (
+   <Mapa2></Mapa2>
+  );
+}
+
 const Drawer = createDrawerNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
       <Drawer.Navigator initialRouteName="Home">
-        <Drawer.Screen name="Home" component={HomeScreen} />
-        <Drawer.Screen name="Lista" component={FlatlistScreen} />
-        <Drawer.Screen name="Mapa" component={MapaScreen} />
+        <Drawer.Screen name="Institutos e Universidades Publicas" component={MapaScreen} />
+        <Drawer.Screen name="Faculdades Particulares" component={Mapa2Screen} />
+        <Drawer.Screen name="Lista de Todas" component={FlatlistScreen} />
       </Drawer.Navigator>
     </NavigationContainer>
   );

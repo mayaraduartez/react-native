@@ -1,4 +1,3 @@
-import * as React from 'react';
 import MapView from 'react-native-maps';
 import { StyleSheet, Text, View, Dimensions } from 'react-native';
 
@@ -8,23 +7,29 @@ export default function App() {
      <View style={styles.container}>
         <MapView style={styles.map}
           initialRegion={{
-              latitude: -31.33136,
-              longitude: -54.11509,
+              latitude: -31.33477, 
+              longitude: -54.10753,
               latitudeDelta: 0.0,
               longitudeDelta: 0.0,
           }}
         >
         <MapView.Marker
-            coordinate={{latitude: -31.30644, 
-            longitude:  -54.06435}}
-            title={"Unipampa"}
-            description={"Unipampa, Bagé"}
+            coordinate={{latitude: -31.33303,
+            longitude:  -54.10042}}
+            title={"Museu Dom Diogo de Souza"}
+            description={"museu de Bagé"}
          />
          <MapView.Marker
-            coordinate={{latitude: -31.33197,
-            longitude:  -54.07188}}
-            title={"IFSul"}
-            description={"IFSul, Bagé"}
+            coordinate={{latitude: -31.34761,
+            longitude:  -54.06158}}
+            title={"Cidade Cenográfica Santa Fé"}
+            description={"cidade cenográfica de Bagé"}
+         />
+         <MapView.Marker
+            coordinate={{latitude: -31.35293,
+            longitude:  -54.05345}}
+            title={"Vila de Santa Tereza"}
+            description={"Santa Tereza em Bagé"}
          />
       </MapView>
  </View>

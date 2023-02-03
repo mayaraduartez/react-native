@@ -13,25 +13,18 @@ const DATA = [
   {
     id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28ba',
     title: 'First Item',
-    nome: "Unipampa - Pública"
+    nome: "Mayara"
   },
   {
     id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63',
     title: 'Second Item',
-    nome: "IFSul - Publica",
+    nome: "Amanda",
   },
   {
     id: '58694a0f-3da1-471f-bd96-145571e29d72',
     title: 'Third Item',
-    nome: "Urcamp - Particular",
+    nome: "Diulli",
   },
-  {
-    id: '58694a0f-3da1-471f-bd96-145571e29d73',
-    title: 'Third Item',
-    nome: "Ideau - Particular",
-  },
-
-  
 ];
 
 
@@ -54,7 +47,6 @@ const App = () => {
   const renderItem = ({ item }) => {
     const backgroundColor = item.id === selectedId ? '#054f77' : '#007fff';
     const color = item.id === selectedId ? 'white' : 'black';
-
 
 
     return (

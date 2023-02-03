@@ -14,12 +14,6 @@ export default function App() {
               longitudeDelta: 0.0,
           }}
         >
-        <MapView.Marker
-            coordinate={{latitude: -31.30644, 
-            longitude:  -54.06435}}
-            title={"Unipampa"}
-            description={"Unipampa, Bagé"}
-         />
          <MapView.Marker
             coordinate={{latitude: -31.33197,
             longitude:  -54.07188}}

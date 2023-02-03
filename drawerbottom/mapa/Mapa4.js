@@ -14,17 +14,11 @@ export default function App() {
               longitudeDelta: 0.0,
           }}
         >
-        <MapView.Marker
-            coordinate={{latitude: -31.30644, 
-            longitude:  -54.06435}}
-            title={"Unipampa"}
-            description={"Unipampa, Bagé"}
-         />
          <MapView.Marker
-            coordinate={{latitude: -31.33197,
-            longitude:  -54.07188}}
-            title={"IFSul"}
-            description={"IFSul, Bagé"}
+            coordinate={{latitude: -31.37154,
+            longitude:  -54.10452}}
+            title={"Ideau"}
+            description={"Ideau, Bagé"}
          />
       </MapView>
  </View>
